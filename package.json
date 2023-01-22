@@ -1,0 +1,23 @@
+{
+  "name": "mongo-api",
+  "version": "1.0.0",
+  "description": "rest api with mongo",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xavajk/mongo-api.git"
+  },
+  "author": "Xavier Kuehn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xavajk/mongo-api/issues"
+  },
+  "homepage": "https://github.com/xavajk/mongo-api#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
