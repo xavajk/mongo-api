@@ -1,9 +1,14 @@
 const express = require('express');
+const mongoose = require('mongoose');
+require('dotenv/config');
 
 const app = express();
 app.listen(3000);
 
-// ROUTES
-app.get('/', (req, res) => {
-    res.send('We are on home page');
+// MIDDLEWARE
+
+// CONNECT TO DB
+mongoose.set('strictQuery', true);
+mongoose.connect(process.env.DB_CONNECTION, () => {
+    console.log('Connected to database');
 });
